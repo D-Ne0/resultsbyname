@@ -1,0 +1,6 @@
+    <tr>
+     <td><%== @reg_no %></td>
+     <td><%== @name %></td>
+     <td><%== @rank %> (<%== @rank_type %>)</td>
+    </tr>
+

@@ -1,0 +1,236 @@
+@import './mixin'
+body{
+background:-webkit-gradient(linear,left bottom,left top,color-stop(.1,#1a82f7),color-stop(.01,#2F2727),color-stop(.01,#2F2727));
+background: -moz-linear-gradient(center bottom,#1a82f7 100%,#2F2727 10%,#2F2727 10%);
+}
+
+#top-head {	
+	position:absolute;
+	top:0;left:0;
+	height:78px;
+	width:100%;
+	background-color:#141414;
+	display:block;
+}
+
+a#tit {
+	position:relative;
+	left:265px;
+	margin-top:13px;
+	display:inline-block;
+	text-decoration:none;
+	font-family:DejaVuSansCondensed,ubuntu,helvetica,verdana;
+	font-size:1.7em;
+	color:white;
+}
+
+a{
+text-decoration:none;
+}
+
+.round {
+	-webkit-border-radius: 2em ;
+	moz-border-radius: 2em;
+	border-radius: 2em;
+	background:white;
+}
+
+#after-head {
+	position:relative;
+	top:100px;
+	margin:0px auto 0px auto;
+	width:780px;
+	height:550px;
+	background:-webkit-gradient(linear,left bottom,left top,color-stop(.1,#dddddd),color-stop(.01,#ffffff),color-stop(.01,#ffffff));
+	background:-moz-linear-gradient(center bottom,#dddddd 100%,#ffffff 70%,#ffffff 10%);
+	border:1px solid #DDDDDD;
+}
+
+#inner-head {
+	height:80px;
+	margin-top:20px;
+}
+
+#form-field {	
+	margin-left:40px;
+	margin-right:40px;	
+	height:40px;
+}
+
+#search-field {
+	float:left;
+}
+
+#city-field {
+	float:left;
+}
+
+.arrange {
+	float:left;
+	padding-left:5px;
+	margin-left:10px;
+	margin-top:7px;
+}
+
+input[type=text] {
+	display:block;
+	border: solid 1px #FFFFFF;
+	width:390px;
+	background:url("./search.png") no-repeat scroll 5px 1px #F9F9F9;
+	padding-left:30px;
+	color:#888888;
+	outline: none;
+	cursor:auto;
+}
+
+.text,a {
+	font-size: .9em;
+	color:#444444;
+	font-family: "Lucida Grande",Verdana,Corbel,"Bitstream Vera Sans","DejaVu Sans",sans-serif;
+}
+
+select {
+	border:0;
+	padding:3px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+	background: -moz-linear-gradient(center bottom,#fff 10%,#ccc 100%,#ccc 100%);
+	width:100px;
+}
+
+
+#alpha {
+	clear:both;
+	list-style-type: none;
+	margin-left:40px;
+	margin-right:40px;
+	padding-left:40px;
+	padding-top:4px;
+	width:425px;
+	height:25px;
+	background:url("./name.png") no-repeat scroll 23px 5px white;
+}
+
+.alpha {
+	float:left;
+	margin-left:6px;
+	cursor:pointer;
+	display:block;
+	font-size:.9em;
+}
+
+.alpha a:hover {
+	color:#66a3d3;
+	font-size:1em;
+}
+
+#inner-head-1 {
+	position:relative;
+	margin-top:30px;
+}
+
+div#result {
+	position:absolute;
+	left:0px;
+	width:465px;
+	height:400px;
+	overflow:auto;
+	float:left;
+	margin-left:40px;
+	-webkit-border-radius: 1em ;
+        -webkit-border-radius: 1em;
+        moz-border-radius: 1em;
+        moz-border-radius: 1em;
+        border-radius: 1em;
+        border-radius: 1em;
+}
+
+div#result-1 {
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:200px;
+	min-height:0px;
+	margin-left:20px;
+	margin-right:40px;
+}
+
+table#result-2 {
+	width:430px;
+	border:1px solid #e5eff8;
+	margin:1em auto;
+	border-collapse:collapse;
+	table-layout:fixed;
+}
+
+table#result-2 td {
+	color:#678197;
+	border-bottom:1px solid #e5eff8;
+	border-left:1px solid #e5eff8;
+	padding:.2em 1em;
+	text-align:center;
+	font-size:0.9em;
+}
+
+table#result-2 tr:nth-child(2n) {
+	background-color:#f4f9fe;
+}
+
+th {
+	background:#f4f9fe;
+	text-align:center;
+	font:bold 1em/2em "Century Gothic","Trebuchet MS",Arial,Helvetica,sans-serif;
+	color:#66a3d3;
+	cursor:pointer;
+}
+
+table#result-3 {
+	margin-left:7px;
+	margin-top:7px;
+	table-layout:fixed;
+	width:188px;
+}
+
+td {
+	text-align:left;	
+	word-wrap:break-word;
+}
+
+#feedback {
+	position:absolute;
+	right:0px;
+	top:290px;
+	width:200px;
+	height:100px;
+	padding:5px;
+	margin-left:20px;
+	margin-right:40px;
+}
+
+::-webkit-scrollbar{
+    width:0.8em;
+    height:0.8em;
+    background-color:#ffffff;
+}
+::-webkit-scrollbar:hover{
+    background-color:#ffffff;
+}
+::-webkit-resizer{
+    -webkit-border-radius:1em;
+     moz-border-radius: 1em;
+     border-radius: 1em;
+    background-color:#e5eff8;
+}
+::-webkit-scrollbar-thumb{
+    min-height:0.8em;
+    min-width:0.8em;
+    -webkit-border-radius:1em;
+     moz-border-radius: 1em;
+     border-radius: 1em;
+    background-color: #d5eff8;
+}
+#result::-webkit-scrollbar-thumb:hover{
+    background-color: #688298;
+}
+#result::-webkit-scrollbar-thumb:active{
+    background-color:#688298;
+}

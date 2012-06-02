@@ -1,0 +1,31 @@
+<div id="result" class="round">
+<table id="result-2" class="text">
+    <!--<tr>
+     <th title="Sort by reg. no.">Reg. No.</th>
+     <th title="Sort by name" >Name</th>
+     <th title="Sort by rank" >Rank</th>
+    </tr>-->
+</table>
+</div>
+  
+<div id="result-1" class="round">
+  <table class="text" align="center" cellspacing="5" id="result-3">
+    <tr>
+     <td class="text" >Search:</td><td class="text"></td>
+    </tr>
+    <tr>
+     <td class="text">Region:</td><td class="text"></td>
+    </tr>
+    <tr>
+     <td class="text">Rank Type:</td><td class="text"></td>
+    </tr>
+    <tr>
+     <td class="text">Results:</td><td class="text"></td>
+    </tr> 
+   </table>    
+</div>
+   
+<div id="feedback" class="round">
+	<h4 class="text" align="center">Feedback</h4>
+	Facebook like+ fb page link
+</div>

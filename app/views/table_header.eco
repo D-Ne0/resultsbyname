@@ -1,0 +1,6 @@
+    <tr>
+     <th title="Sort by reg. no." id="reg_no">Reg. No.</th>
+     <th title="Sort by name" id="name">Name</th>
+     <th title="Sort by rank" id="rank">Rank</th>
+    </tr>
+

@@ -1,0 +1,28 @@
+ <div id="form-field" class="round"> 
+  <!-- <form method="get" action="/"> -->
+   <div id="search-field" class="arrange">
+    <input type="text" size="80" value="" id="nameB" class="text" autocomplete="off" name="name" required/>
+   </div>
+   <div id="city-field" class="arrange">
+    <select id="city" name="city" required>
+     <option value="Any" class="text">Region:Any</option>    
+    </select>
+   </div>
+   <div id="rank-field" class="arrange">
+    <select id="type" name="type" required>
+     <option value="Any" class="text">Rank Type:Any</option>
+     <option value="AIR" class="text">AIR</option>
+     <option value="SC" class="text">SC</option>  
+     <option value="ST" class="text">ST</option>  
+     <option value="GE PD" class="text">GE PD</option>  
+     <option value="OBC(NCL)" class="text">OBC(NCL)</option>  
+    </select>
+   </div>
+  <!-- </form> -->
+ </div>
+
+ <!--<ul id="alpha" class="round">
+   <% for e in [65..90] : %>
+   <li class="alpha text" id="<%= String.fromCharCode(e) %>"><%= String.fromCharCode(e) %></li>
+   <% end %>
+ </ul>-->

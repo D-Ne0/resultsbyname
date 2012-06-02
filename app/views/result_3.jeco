@@ -1,0 +1,15 @@
+  <table class="text" align="center" cellspacing="5" id="result-3">
+    <tr>
+     <td class="text" >Search:</td><td class="text"><%== @search %></td>
+    </tr>
+    <tr>
+     <td class="text">Region:</td><td class="text"><%== @city %></td>
+    </tr>
+    <tr>
+     <td class="text">Rank Type:</td><td class="text"><%== @type %></td>
+    </tr>
+    <tr>
+     <td class="text">Results:</td><td class="text"><%== @count %></td>
+    </tr> 
+  </table>    
+

@@ -1,7 +1,7 @@
  <div id="form-field" class="round"> 
   <!-- <form method="get" action="/"> -->
    <div id="search-field" class="arrange">
-    <input type="text" size="80" value="" id="nameB" class="text" autocomplete="off" name="name" required/>
+    <input type="text" size="80" value="Candidate's Name" id="nameB" class="text" autocomplete="off" name="name" required/>
    </div>
    <div id="city-field" class="arrange">
     <select id="city" name="city" required>

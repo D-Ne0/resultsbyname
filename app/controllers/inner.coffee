@@ -11,6 +11,7 @@ class Inner extends Spine.Controller
   
   events:
     'keyup input':'getResult'
+    'click input':'click'
     'change select':'getResult_1'
     'click li':'getResult_2'
 
@@ -26,8 +27,11 @@ class Inner extends Spine.Controller
     city = @city.val()
     type = @type.val()
     search = @search.val()
-    if search.length>=4 and e.keyCode==13
-      @navigate '','name:'+search,'region:'+city,'rank_type:'+type
+    if e.keyCode==13
+      if search.length>=4
+        @navigate '','name:'+search,'region:'+city,'rank_type:'+type
+      else
+        alert 'Please enter atleast 4 characters'
 
   getResult_1:->
     city = @city.val()
@@ -35,7 +39,9 @@ class Inner extends Spine.Controller
     search = @search.val()
     if search.length>=4
       @navigate '','name:'+search,'region:'+city,'rank_type:'+type
-  
+    else
+      alert 'Please enter atleast 4 characters'      
+
   render: =>
     @cities = new RegionCodes el:@city,template:require('views/region_code')
     cities = RegionCode.all()
@@ -45,5 +51,8 @@ class Inner extends Spine.Controller
   getResult_2:(e)->
     fl = $(e.target).text()
     @navigate '',fl
+
+  click:()->
+    @search.val('') if @search.val() is "Candidate's Name"
 
 module.exports = Inner

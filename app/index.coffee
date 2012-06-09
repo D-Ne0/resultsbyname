@@ -14,7 +14,7 @@ class App extends Spine.Controller
     @log('App Instantiated')
     @resultsByName = new ResultsByName
     @append @resultsByName.active()
-
+    Spine.Model.host = "http://backens.herokuapp.com"
     Spine.Route.setup()
 
 module.exports = App

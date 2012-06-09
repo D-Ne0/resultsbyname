@@ -18,7 +18,7 @@ class Inner extends Spine.Controller
   constructor: ->
     super
     @html require('views/form')()
-    Spine.Model.host = "http://localhost:3000"
+    Spine.Model.host = "http://backens.herokuapp.com"
     Spine.Ajax.disable -> RegionCode.fetch()
     RegionCode.bind('refresh',@render)
     #RegionCode.fetch({ajax:false})

@@ -8,7 +8,7 @@ class Jee2012 extends Spine.Model
   @getResult: (params) ->
     #@deleteAll()
     $.ajax
-      url:Spine.Model.host
+      url:@url
       data:params
       type:'get'
       success:(results) =>
@@ -36,6 +36,6 @@ class Jee2012 extends Spine.Model
       j.save()
     @trigger('refresh',results)
      
-  #@url: 'http://localhost:3000/jee2012s'
+  @url: 'http://backens.herokuapp.com//jee2012s'
 
 module.exports = Jee2012

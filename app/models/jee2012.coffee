@@ -8,7 +8,7 @@ class Jee2012 extends Spine.Model
   @getResult: (params) ->
     #@deleteAll()
     $.ajax
-      url:'http://backens.herokuapp.com/jee2012s'
+      url:Spine.Model.host
       data:params
       type:'get'
       success:(results) =>

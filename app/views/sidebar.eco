@@ -1,0 +1,15 @@
+<!--<div class="items">-->
+<div id="jee2012" class="item active">
+<center>JEE</center>
+</div>
+<div id="aieee2012" class="item">
+<center>AIEEE</center>
+</div>
+<div class="item">
+<center>XII Board</center>
+</div>
+<div class="item">
+<center>VIT</center>
+</div>
+<!--</div>-->
+

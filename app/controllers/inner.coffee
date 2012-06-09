@@ -21,7 +21,6 @@ class Inner extends Spine.Controller
     Spine.Model.host = "http://backens.herokuapp.com"
     Spine.Ajax.disable -> RegionCode.fetch()
     RegionCode.bind('refresh',@render)
-    @log(Spine.Model.host)
     #RegionCode.fetch({ajax:false})
 
   getResult:(e)->

@@ -10,7 +10,7 @@
     var exports = this;
     jQuery(function(){
       var App = require("index");
-      exports.app = new App({el: $("article")});      
+      exports.app = new App({el: $("#article")});      
     });
   </script>
   
@@ -18,9 +18,11 @@
   <!--<script src="http://maccman-spine.herokuapp.com/start.js" type="text/javascript" charset="utf-8"></script>-->
 </head>
 <body>
-<header id="top-head">
- <a id="tit" href="/"><b>jee2012 | byName</b></a>  
-</header>
-<article></article>
+  <center>
+    <header id="header">
+      <h1>Results By Name</h1>
+    </header>
+  </center>
+<article id="article"></article>
 </body>
 </html>

@@ -8,7 +8,7 @@ Result_2 = require('controllers/result_2')
 Result_3 = require('controllers/result_3')
 
 class Jee2012s extends Spine.Controller
-  className: 'round'
+  className: 'jee2012 round'
   
   elements:
     '#result-2':'result'

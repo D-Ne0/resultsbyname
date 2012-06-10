@@ -1,3 +1,6 @@
-<div>
+<div class="after-head">
 <h1>Coming Soon!!!</h1>
+<b>Like us to stay tuned!!!</b>
+<br><br>
+<div class="fb-like" data-href="http://www.facebook.com/resultsbyname" data-send="false" data-width="450" data-show-faces="true" data-font="lucida grande"></div>
 </div>

@@ -9,8 +9,9 @@ a {
   border-radius: 2em;
   background: #fff;
 }
-.aieee2012 div {
+.aieee2012 .after-head {
   margin-left: 20px;
+  margin-bottom: 20px;
 }
 .jee2012 {
   margin-left: 80px;
@@ -324,7 +325,7 @@ header#header {
   height: 50px;
   overflow: hidden;
 }
-header#header h1 {
+header#header a {
   border-right: 1px solid #181818;
   -moz-box-shadow: 1px 0 1px #525252;
   -webkit-box-shadow: 1px 0 1px #525252;
@@ -336,6 +337,7 @@ header#header h1 {
   margin: 0;
   padding: 0 20px;
   text-shadow: 0 -1px 1px #000;
+  text-decoration: none;
 }
 .sideHead {
   padding: 15px;

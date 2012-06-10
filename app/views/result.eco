@@ -26,6 +26,9 @@
 </div>
    
 <div id="feedback" class="round">
-	<h4 class="text" align="center">Feedback</h4>
-	Facebook like+ fb page link
+<center><span class="text" align="center"><b>Feedback</b></span></center>
+<br>
+<div class="fb-like" data-href="http://www.facebook.com/resultsbyname" data-send="false" data-width="150" data-show-faces="false" data-font="lucida grande"></div>
+<br>
+<span><a href="http://www.facebook.com/resultsbyname">facebook.com/resultsbyname</a></span>
 </div>

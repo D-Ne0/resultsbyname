@@ -9,8 +9,8 @@ a {
   border-radius: 2em;
   background: #fff;
 }
-.aieee2012 {
-  margin: 0px auto 0px auto;
+.aieee2012 div {
+  margin-left: 20px;
 }
 .jee2012 {
   margin-left: 80px;
@@ -158,12 +158,25 @@ a {
 .jee2012 #feedback {
   position: absolute;
   right: 0px;
-  top: 290px;
+  top: 270px;
   width: 200px;
-  height: 100px;
+  height: 120px;
   padding: 5px;
   margin-left: 20px;
   margin-right: 40px;
+}
+.jee2012 #feedback span a {
+  color: #66a3d3;
+  font-size: 0.8em;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.jee2012 #feedback span a:hover {
+  color: #3b5998;
+  font-size: 0.8em;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 ::-webkit-scrollbar {
   width: 0.8em;

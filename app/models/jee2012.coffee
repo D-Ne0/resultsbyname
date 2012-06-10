@@ -10,6 +10,7 @@ class Jee2012 extends Spine.Model
     $.ajax
       url:@url
       data:params
+      dataType:'json'
       type:'get'
       success:(results) =>
         @updateInterface(results)
@@ -36,6 +37,7 @@ class Jee2012 extends Spine.Model
       j.save()
     @trigger('refresh',results)
      
-  @url: 'http://backens.herokuapp.com//jee2012s'
+   @url: 'http://backens.herokuapp.com/jee2012s'
+   #@url: 'http://localhost:3000/jee2012s'
 
 module.exports = Jee2012

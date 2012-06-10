@@ -11,7 +11,7 @@ class Result2 extends Spine.Controller
   template: -> arguments[0]
  
   render:(results)->
-    #@log('ssd'+results[0].name)
+    #@log(results.length)
     @results = results if results
     @html require('views/table_header')
     @append @template(@results)

@@ -327,8 +327,14 @@ body, html {
 }
 body {
     -moz-box-align: stretch;
-    -moz-box-orient: vertical;
+    -webkit-box-align: stretch;
+	box-align: stretch;
+    display: -webkit-box;
+	display: box;
     display: -moz-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+	box-orient: vertical;
 }
 header#header {
     -moz-box-sizing: border-box;

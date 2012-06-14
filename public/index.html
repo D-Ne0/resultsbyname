@@ -6,6 +6,13 @@
   <link rel="stylesheet" href="/application.css" type="text/css" charset="utf-8">
   <script src="/application.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" charset="utf-8">
+        for(var winPath in require.modules)
+{
+path = winPath.replace(/\\/g, '/'); 
+path = path.match('/node_modules/') ? path.split('/node_modules/')[1] : path;
+path = path.match('/app/') ? path.split('/app/')[1] : path;
+require.modules[path] = require.modules[winPath];
+}
     var jQuery  = require("jqueryify");
     var exports = this;
     jQuery(function(){

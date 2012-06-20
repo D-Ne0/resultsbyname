@@ -4,6 +4,7 @@
      <th title="Sort by reg. no.">Reg. No.</th>
      <th title="Sort by name" >Name</th>
      <th title="Sort by rank" >Rank</th>
+     <th title="Sort by rank" >Category</th>
     </tr>-->
 </table>
 </div>

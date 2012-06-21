@@ -14,6 +14,6 @@ class Main extends Spine.Stack
     '/jee2012': 'jee2012s'
     '/aieee2012': 'aieee2012s'
 
-  default: 'jee2012s'
+  #default: 'jee2012s'
     
 module.exports = Main

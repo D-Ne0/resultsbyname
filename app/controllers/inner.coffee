@@ -30,7 +30,7 @@ class Inner extends Spine.Controller
     search = @search.val()
     if e.keyCode==13
       if search.length>=4
-        @navigate '','name:'+search,'region:'+city,'rank_type:'+type
+        @navigate '','jee2012','name:'+search,'region:'+city,'rank_type:'+type
       else
         alert 'Please enter atleast 4 characters'
 
@@ -39,7 +39,7 @@ class Inner extends Spine.Controller
     type = @type.val()
     search = @search.val()
     if search.length>=4
-      @navigate '','name:'+search,'region:'+city,'rank_type:'+type
+      @navigate '','jee2012','name:'+search,'region:'+city,'rank_type:'+type
     else
       alert 'Please enter atleast 4 characters'      
 

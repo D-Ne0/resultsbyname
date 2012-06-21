@@ -11,6 +11,7 @@ a {
   padding-top: 5px;
   padding-left: 20px;
   padding-bottom: 20px;
+  width: 1500px;
 }
 .aieee2012 .after-head p {
   font-family: 'Yanone Kaffeesatz', arial, sans-serif;
@@ -29,12 +30,12 @@ a {
   font-size: 14px;
   color: #555;
   border: 1px #ddd solid;
-  webkit-box-shadow: 0px 0px 4px #aaa;
-  -moz-box-shadow: 0px 0px 4px #aaa;
   -moz-box-shadow: 0px 0px 4px #aaa;
   -webkit-box-shadow: 0px 0px 4px #aaa;
   box-shadow: 0px 0px 4px #aaa;
-  -webkit-transition: background 0.3s linear;
+  -webkit-transition: 0.3s opacity linear;
+  -moz-transition: 0.3s opacity linear;
+  transition: 0.3s opacity linear;
 }
 .aieee2012 .after-head input[type=number]:hover {
   background: #eee;
@@ -45,20 +46,19 @@ a {
   margin-top: 10px;
   width: 120px;
   padding: 5px;
-  background-color: #18a5cc;
   border: none;
-  -webkit-transition: -webkit-box-shadow 0.3s linear;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#18a5cc), to(#0a85a8));
-  background: -moz-linear-gradient(25% 75% 90deg, #0a85a8, #18a5cc);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
+  -webkit-transition: 0.3s opacity linear;
+  -moz-transition: 0.3s opacity linear;
+  transition: 0.3s opacity linear;
+  background: #18a5cc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#18a5cc), to(#0a85a8)) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(top, #18a5cc, #0a85a8) repeat scroll 0 0 transparent;
+  background: linear-gradient(top, #18a5cc, #0a85a8) repeat scroll 0 0 transparent;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 .aieee2012 .after-head input[type=button]:hover {
-  -webkit-box-shadow: 0px 0px 20px #555;
-  -moz-box-shadow: 0px 0px 20px #aaa;
   -moz-box-shadow: 0px 0px 20px #555;
   -webkit-box-shadow: 0px 0px 20px #555;
   box-shadow: 0px 0px 20px #555;
@@ -371,9 +371,10 @@ button.default:active {
 body,
 html {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
+  overflow-x: hidden;
 }
 body {
   display: -webkit-box;
@@ -406,7 +407,7 @@ header#header a {
   font-size: 18px;
   font-weight: bold;
   line-height: 50px;
-  margin: 0;
+  margin-left: 550px;
   padding: 0 20px;
   text-shadow: 0 -1px 1px #000;
   text-decoration: none;

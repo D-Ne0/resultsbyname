@@ -29,6 +29,7 @@ class Aieee2012s extends Spine.Controller
     return alert 'Invalid Roll No' if rollNo.length!=8
     f = parseInt(rollNo/100000)
     l = rollNo%100000
+    $('div#not_saved').text('')
     $('div#saved').text('saving...')
     RollNo.sendRollNo(f,l)
 

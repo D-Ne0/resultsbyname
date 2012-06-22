@@ -85,7 +85,8 @@ a {
   background: linear-gradient(top, #ddd 100%, #fff 70%) repeat scroll 0 0 transparent;
   border: 1px solid #ddd;
 }
-.jee2012 #inner-head {
+.jee2012 #inner-head,
+.aieee2012 #inner-head {
   height: 80px;
   margin-top: 20px;
 }
@@ -100,13 +101,13 @@ a {
 .jee2012 #city-field {
   float: left;
 }
-.jee2012 .arrange {
+.arrange {
   float: left;
   padding-left: 5px;
   margin-left: 10px;
   margin-top: 7px;
 }
-.jee2012 input[type=text] {
+input[type=text] {
   display: block;
   border: solid 1px #fff;
   width: 250px;
@@ -122,7 +123,7 @@ a {
   color: #444;
   font-family: "Lucida Grande", Verdana, Corbel, "Bitstream Vera Sans", "DejaVu Sans", sans-serif;
 }
-.jee2012 select {
+select {
   border: 0;
   padding: 3px;
   background: #fff 10%;
@@ -130,28 +131,6 @@ a {
   background: -moz-linear-gradient(top, #fff 10%, #ccc 100%) repeat scroll 0 0 transparent;
   background: linear-gradient(top, #fff 10%, #ccc 100%) repeat scroll 0 0 transparent;
   width: 100px;
-}
-.jee2012 #alpha {
-  clear: both;
-  list-style-type: none;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding-left: 40px;
-  padding-top: 4px;
-  width: 425px;
-  height: 25px;
-  background: url("./name.png") no-repeat scroll 23px 5px #fff;
-}
-.jee2012 .alpha {
-  float: left;
-  margin-left: 6px;
-  cursor: pointer;
-  display: block;
-  font-size: 0.9em;
-}
-.jee2012 .alpha a:hover {
-  color: #66a3d3;
-  font-size: 1em;
 }
 .jee2012 #inner-head-1 {
   position: relative;
@@ -169,10 +148,10 @@ a {
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 200px;
+  width: 240px;
   min-height: 0px;
   margin-left: 20px;
-  margin-right: 40px;
+  margin-right: 10px;
 }
 .jee2012 table#result-2 {
   width: 530px;
@@ -208,31 +187,6 @@ a {
 .jee2012 td {
   text-align: left;
   word-wrap: break-word;
-}
-.jee2012 #feedback {
-  position: absolute;
-  right: 0px;
-  top: 270px;
-  width: 200px;
-  height: 120px;
-  padding: 5px;
-  margin-left: 20px;
-  margin-right: 40px;
-}
-.jee2012 #feedback span a {
-  color: #66a3d3;
-  font-size: 0.8em;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  text-decoration: none;
-}
-.jee2012 #feedback span a:hover {
-  color: #3b5998;
-  font-size: 0.8em;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 ::-webkit-scrollbar {
   width: 0.8em;

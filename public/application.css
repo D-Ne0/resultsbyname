@@ -90,12 +90,14 @@ a {
   height: 80px;
   margin-top: 20px;
 }
-.jee2012 #form-field {
+.jee2012 #form-field,
+.aieee2012 #form-field {
   margin-left: 40px;
   max-width: 565px;
   height: 40px;
 }
-.jee2012 #search-field {
+.jee2012 #search-field,
+.aieee2012 #search-field {
   float: left;
 }
 .jee2012 #city-field {
@@ -118,7 +120,8 @@ input[type=text] {
   cursor: auto;
 }
 .jee2012 .text,
-a {
+a,
+.aieee2012 .text {
   font-size: 0.9em;
   color: #444;
   font-family: "Lucida Grande", Verdana, Corbel, "Bitstream Vera Sans", "DejaVu Sans", sans-serif;
@@ -132,10 +135,12 @@ select {
   background: linear-gradient(top, #fff 10%, #ccc 100%) repeat scroll 0 0 transparent;
   width: 100px;
 }
-.jee2012 #inner-head-1 {
+.jee2012 #inner-head-1,
+.aieee2012 div#inner-head-1 {
   position: relative;
 }
-.jee2012 div#result {
+.jee2012 div#result,
+.aieee2012 div#result {
   position: absolute;
   left: 0px;
   width: 565px;
@@ -144,7 +149,8 @@ select {
   float: left;
   margin-left: 40px;
 }
-.jee2012 div#result-1 {
+.jee2012 div#result-1,
+.aieee2012 div#result-1 {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -153,38 +159,44 @@ select {
   margin-left: 20px;
   margin-right: 10px;
 }
-.jee2012 table#result-2 {
+.jee2012 table#result-2,
+.aieee2012 table#result-2 {
   width: 530px;
   border: 1px solid #e5eff8;
   margin: 1em auto;
   border-collapse: collapse;
   table-layout: fixed;
 }
-.jee2012 table#result-2 td {
+.jee2012 table#result-2 td,
+.aieee2012 table#result-2 td {
   color: #678197;
   border-bottom: 1px solid #e5eff8;
   border-left: 1px solid #e5eff8;
   padding: 0.2em 1em;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
-.jee2012 table#result-2 tr:nth-child(2n) {
+.jee2012 table#result-2 tr:nth-child(2n),
+.aieee2012 table#result-2 tr:nth-child(2n+1) {
   background-color: #f4f9fe;
 }
-.jee2012 th {
+.jee2012 th,
+.aieee2012 th {
   background: #f4f9fe;
   text-align: center;
   font: bold 1em/2em "Century Gothic", "Trebuchet MS", Arial, Helvetica, sans-serif;
   color: #66a3d3;
   cursor: pointer;
 }
-.jee2012 table#result-3 {
+.jee2012 table#result-3,
+.aieee2012 table#result-3 {
   margin-left: 7px;
   margin-top: 7px;
   table-layout: fixed;
   width: 188px;
 }
-.jee2012 td {
+.jee2012 table#result-3 td,
+.aieee2012 table#result-3 td {
   text-align: left;
   word-wrap: break-word;
 }

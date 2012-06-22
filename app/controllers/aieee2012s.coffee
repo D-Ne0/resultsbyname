@@ -11,6 +11,7 @@ class Aieee2012s extends Spine.Controller
  
   events:
     'click input[name=send_roll_no]':'sendRollNo'
+    'click a':'goToResults'
 
   constructor: ->
     super
@@ -32,5 +33,8 @@ class Aieee2012s extends Spine.Controller
     $('div#not_saved').text('')
     $('div#saved').text('saving...')
     RollNo.sendRollNo(f,l)
+
+  goToResults: ->
+    @html require('views/aieee2012')()
 
 module.exports = Aieee2012s

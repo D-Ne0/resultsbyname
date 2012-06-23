@@ -28,11 +28,6 @@ class Jee2012s extends Spine.Controller
           @load.render() 
           Jee2012.getResult(params)
 
-      ###'/:fl':(params) -> 
-        @load = new Load({el:@result,template:require('views/loading')})
-        @load.render()
-        Jee2012.getResult(params)###
-
     div = $('<div>').attr('id','inner-head')
     div_1 = $('<div>').attr('id','inner-head-1')
     @inner = new Inner(el:div)

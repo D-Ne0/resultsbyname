@@ -563,17 +563,17 @@ header#header a {
   padding: 20px;
 }
 div.t {
-  border-top: 1px solid #ddd;
+  position: absolute;
   height: 30px;
-  background-color: whiteSmoke;
   padding: 10px 0 0 0;
+  bottom: 5px;
+  left: 70px;
 }
 div.t span a {
   color: #18a5cc;
-  margin-top: 20px;
-  margin-left: 650px;
+  margin-bottom: 20px;
   border: none;
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   -webkit-transition: 0.3s opacity linear;
   -moz-transition: 0.3s opacity linear;

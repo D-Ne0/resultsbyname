@@ -22,7 +22,6 @@ class Jee2012s extends Spine.Controller
 
     @routes
       '/jee2012/name::search/region::city/rank_type::type':(params) -> 
-        #alert params.search
         if params.search.length>=4
           @load = new Load({el:@result,template:require('views/loading')})
           @load.render() 

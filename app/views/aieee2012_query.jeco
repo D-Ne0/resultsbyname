@@ -1,0 +1,27 @@
+<tr>
+ <td class="text" >Search:</td><td class="text"><%== @search %></td>
+</tr>
+<tr>
+ <td class="text" >City:</td><td class="text"><%== @cityName %></td>
+</tr>
+<tr>
+ <td class="text">Category:</td><td class="text"><%== @catg %></td>
+</tr>
+<tr>
+<td class="text">Results:</td><td class="text"><%== @count %></td>
+</tr>
+<tr>
+<td>Page:</td><td><%== @page %></td>
+</tr> 
+<tr>
+<% if @page>1: %>
+	<td style="cursor:pointer"><u style="color:blue" class="next-prev" id="<%== parseInt(@page)-1 %>">Prev</u></td>
+<% else: %>
+	<td></td>
+<% end %>
+<% if @count==50: %>
+	<td style="cursor:pointer"><u style="color:blue" class="next-prev" id="<%== parseInt(@page)+1 %>">Next</u></td>
+<% else: %>
+	<td></td>
+<% end %>
+</tr>

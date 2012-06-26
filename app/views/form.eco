@@ -5,12 +5,12 @@
    </div>
    <div id="city-field" class="arrange">
     <select id="city" name="city" required>
-     <option value="Any" class="text">Region</option>    
+     <option value="Any" class="text">Region:</option>    
     </select>
    </div>
    <div id="rank-field" class="arrange">
     <select id="type" name="type" required>
-     <option value="Any" class="text">Category</option>
+     <option value="Any" class="text">Category:</option>
      <option value="GE" class="text">GE</option>
      <option value="SC" class="text">SC</option>  
      <option value="ST" class="text">ST</option>  
@@ -18,6 +18,12 @@
      <option value="OBC" class="text">OBC</option>  
      <option value="OBCM" class="text">OBCM</option>  
     </select>
+   </div>
+   <div id="submit" class="arrange">
+     <input type="button" value="Submit" />
+   </div>
+   <div id="reset" class="arrange">
+     <input type="button" value="Reset" />
    </div>
   <!-- </form> -->
  </div>

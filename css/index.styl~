@@ -9,25 +9,25 @@ text-decoration:none;
 	background:white;
 }
 
-.home .after-head {
+.aieee2012 .after-head {
 	padding-top:5px;
 	padding-left:20px;
 	padding-bottom:20px;
 	width:1500px;
 }
 
-.home .after-head p {
+.aieee2012 .after-head p {
 	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
 	font-size:18px;
 	color: #555;
 }
 
-.home .after-head label {
+.aieee2012 .after-head label {
 	color: #666;
 	font-size:18px;
 }
 
-.home .after-head input[type=number] {
+.aieee2012 .after-head input[type=number] {
 	padding: 4px; 
 	margin: 4px 0 20px 0; 
 	background: #fff; 
@@ -39,11 +39,11 @@ text-decoration:none;
 	transition();	
 }
 
-.home .after-head input[type=number]:hover {
+.aieee2012 .after-head input[type=number]:hover {
 	background:#eee;
 }
 
-.home .after-head input[type=button] {
+.aieee2012 .after-head input[type=button] {
 	color: #eee; 
 	text-transform: uppercase; 
 	margin-top: 10px;
@@ -55,17 +55,17 @@ text-decoration:none;
 	border-radius(4px);
 }
 
-.home .after-head input[type=button]:hover {
+.aieee2012 .after-head input[type=button]:hover {
 	box-shadow(0px 0px 20px #555);
 	cursor:  pointer; 
 }
 
-.home .after-head div#saved {
+.aieee2012 .after-head div#saved {
 	font-size:13px;
 	color:green;
 }
 
-.home .after-head div#not_saved {
+.aieee2012 .after-head div#not_saved {
 	font-size:13px;
 	color:red;
 }
@@ -341,6 +341,7 @@ header#header {
     overflow: hidden;
 }
 header#header a{
+    /*border-right:
     color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
@@ -449,15 +450,14 @@ div.t {
 	background-color:whiteSmoke;
 	padding:10px 0 0 0;
 }
-div.t span a{
+div.t center a{
 	color:#18a5cc;
 	margin-top: 20px;
-	margin-left: 650px;
 	border: none;
 	font-size:1.2em;
 	text-decoration:none;
 	transition();
 }
-div.t span a:hover {
+div.t center a:hover {
 	color:#0a85a8;
 }

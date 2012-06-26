@@ -4,25 +4,22 @@ RegionCodes = require('controllers/region_codes')
 
 class Inner extends Spine.Controller
   elements:
-    'input':'search'
+    'input[type=text]':'search'
     'select#city':'city'
     'select#type':'type'
-    'li':'fL'
   
   events:
     'keyup input':'getResult'
-    'click input':'click'
-    'change select':'getResult_1'
-    'click li':'getResult_2'
+    'click input[type=text]':'click'
+    'click #submit input[type=button]':'getResult_1'
+    'click #reset input[type=button]':'resetFields'
 
   constructor: ->
     super
     @html require('views/form')()
     Spine.Model.host = "http://backens.herokuapp.com"
-    #Spine.Model.host = "http://localhost:3000"
     Spine.Ajax.disable -> RegionCode.fetch()
     RegionCode.bind('refresh',@render)
-    #RegionCode.fetch({ajax:false})
 
   getResult:(e)->
     city = @city.val()
@@ -47,13 +44,15 @@ class Inner extends Spine.Controller
     @cities = new RegionCodes el:@city,template:require('views/region_code')
     cities = RegionCode.all()
     #@log(cities[0].name)
-    @cities.render(cities)  
-    
-  getResult_2:(e)->
-    fl = $(e.target).text()
-    @navigate '',fl
+    @cities.render(cities)
 
   click:()->
     @search.val('') if @search.val() is "Candidate's Name"
+
+  resetFields:()->
+    @search.val('Candidate\'s Name')
+    @city.val('Any')
+    @type.val('Any')
+    @navigate '','jee2012'
 
 module.exports = Inner

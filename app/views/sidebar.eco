@@ -1,4 +1,7 @@
 <!--<div class="items">-->
+<div id="home" class="item">
+<center>HOME</center>
+</div>
 <div id="jee2012" class="item">
 <center>JEE</center>
 </div>

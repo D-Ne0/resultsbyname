@@ -1,0 +1,18 @@
+<% @P1 = if @P1 is "Not Applicable/Not Applied" or @P1 is "ABS" then "NA" else @P1 %>
+<% @P2 = if @P2 is "Not Applicable/Not Applied" or @P2 is "ABS" then "NA" else @P2 %>
+<tr>
+ <td><%== @R %></td>
+ <td><%== @N %></td>
+ <% if @P1 isnt "NA": %>     
+ <td>AIR:<%== @AI1 %><br>AIR:<%== @AIC1 %> (<%== @C %>)<br><hr>SR:<%== @SA1 %><br>SR:<%== @SC1 %> (<%== @C %>)</td>
+ <% else: %>
+ <td>NA</td>
+ <% end %>
+ <% if @P2 isnt "NA": %>     
+ <td>AIR:<%== @AI2 %><br>AIR:<%== @AIC2 %> (<%== @C %>)<br><hr>SR:<%== @SA2 %><br>SR:<%== @SC2 %> (<%== @C %>)</td>
+ <% else: %>
+ <td>NA</td>
+ <% end %>
+ <td>B.E: <%== @P1 %><br><br>B.Arch: <%== @P2 %></td>
+</tr>
+

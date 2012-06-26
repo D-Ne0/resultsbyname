@@ -7,22 +7,22 @@ a {
   border-radius: 0.5em;
   background: #fff;
 }
-.aieee2012 .after-head {
+.home .after-head {
   padding-top: 5px;
   padding-left: 20px;
   padding-bottom: 20px;
   width: 1500px;
 }
-.aieee2012 .after-head p {
+.home .after-head p {
   font-family: 'Yanone Kaffeesatz', arial, sans-serif;
   font-size: 18px;
   color: #555;
 }
-.aieee2012 .after-head label {
+.home .after-head label {
   color: #666;
   font-size: 18px;
 }
-.aieee2012 .after-head input[type=number] {
+.home .after-head input[type=number] {
   padding: 4px;
   margin: 4px 0 20px 0;
   background: #fff;
@@ -37,10 +37,10 @@ a {
   -moz-transition: 0.3s opacity linear;
   transition: 0.3s opacity linear;
 }
-.aieee2012 .after-head input[type=number]:hover {
+.home .after-head input[type=number]:hover {
   background: #eee;
 }
-.aieee2012 .after-head input[type=button] {
+.home .after-head input[type=button] {
   color: #eee;
   text-transform: uppercase;
   margin-top: 10px;
@@ -58,21 +58,22 @@ a {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-.aieee2012 .after-head input[type=button]:hover {
+.home .after-head input[type=button]:hover {
   -moz-box-shadow: 0px 0px 20px #555;
   -webkit-box-shadow: 0px 0px 20px #555;
   box-shadow: 0px 0px 20px #555;
   cursor: pointer;
 }
-.aieee2012 .after-head div#saved {
+.home .after-head div#saved {
   font-size: 13px;
   color: #008000;
 }
-.aieee2012 .after-head div#not_saved {
+.home .after-head div#not_saved {
   font-size: 13px;
   color: #f00;
 }
-.jee2012 {
+.jee2012,
+.aieee2012 {
   margin-left: 80px;
   margin-right: 220px;
   margin-top: 20px;
@@ -93,15 +94,45 @@ a {
 .jee2012 #form-field,
 .aieee2012 #form-field {
   margin-left: 40px;
-  max-width: 565px;
+  max-width: 705px;
   height: 40px;
 }
 .jee2012 #search-field,
 .aieee2012 #search-field {
   float: left;
 }
-.jee2012 #city-field {
+.jee2012 #city-field,
+.aieee2012 #city-field {
   float: left;
+}
+.jee2012 input[type=button],
+.aieee2012 input[type=button] {
+  color: #eee;
+  text-transform: uppercase;
+  margin-top: 1px;
+  padding: 5px;
+  border: none;
+  -webkit-transition: 0.3s opacity linear;
+  -moz-transition: 0.3s opacity linear;
+  transition: 0.3s opacity linear;
+  background: #18a5cc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#18a5cc), to(#0a85a8)) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(top, #18a5cc, #0a85a8) repeat scroll 0 0 transparent;
+  background: linear-gradient(top, #18a5cc, #0a85a8) repeat scroll 0 0 transparent;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.jee2012 input[type=button]:hover,
+.aieee2012 input[type=button]:hover {
+  -webkit-transition: 0.3s opacity linear;
+  -moz-transition: 0.3s opacity linear;
+  transition: 0.3s opacity linear;
+  background: #17a4cb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#17a4cb), to(#0a74a7)) repeat scroll 0 0 transparent;
+  background: -moz-linear-gradient(top, #17a4cb, #0a74a7) repeat scroll 0 0 transparent;
+  background: linear-gradient(top, #17a4cb, #0a74a7) repeat scroll 0 0 transparent;
+  cursor: pointer;
 }
 .arrange {
   float: left;
@@ -177,7 +208,7 @@ select {
   font-size: 0.8em;
 }
 .jee2012 table#result-2 tr:nth-child(2n),
-.aieee2012 table#result-2 tr:nth-child(2n+1) {
+.aieee2012 table#result-2 tr:nth-child(2n) {
   background-color: #f4f9fe;
 }
 .jee2012 th,
@@ -190,7 +221,6 @@ select {
 }
 .jee2012 table#result-3,
 .aieee2012 table#result-3 {
-  margin-left: 7px;
   margin-top: 7px;
   table-layout: fixed;
   width: 188px;
@@ -367,8 +397,6 @@ header#header {
   overflow: hidden;
 }
 header#header a {
-/*border-right: 1px solid #181818;*/
-/*box-shadow: 1px 0 1px #525252;*/
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -533,4 +561,24 @@ header#header a {
   -webkit-box-shadow: inset 1px 2px 2px rgba(0,0,0,0.10);
   box-shadow: inset 1px 2px 2px rgba(0,0,0,0.10);
   padding: 20px;
+}
+div.t {
+  border-top: 1px solid #ddd;
+  height: 30px;
+  background-color: whiteSmoke;
+  padding: 10px 0 0 0;
+}
+div.t span a {
+  color: #18a5cc;
+  margin-top: 20px;
+  margin-left: 650px;
+  border: none;
+  font-size: 1.2em;
+  text-decoration: none;
+  -webkit-transition: 0.3s opacity linear;
+  -moz-transition: 0.3s opacity linear;
+  transition: 0.3s opacity linear;
+}
+div.t span a:hover {
+  color: #0a85a8;
 }

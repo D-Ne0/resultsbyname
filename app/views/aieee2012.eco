@@ -1,0 +1,57 @@
+<div id="inner-head">
+ <div id="form-field" class="round"> 
+   <div id="search-field" class="arrange">
+    <input type="text" size="80" value="Candidate's Name" class="text" autocomplete="off" name="name" required/>
+   </div>
+   <div id="city-field" class="arrange">
+    <select id="city" name="city" required>
+     <option value="Any" class="text">City:</option>    
+    </select>
+   </div>
+   <div id="rank-field" class="arrange">
+    <select id="type" name="type" required>
+     <option value="Any" class="text">Category:</option>
+     <option value="GEN" class="text">GEN</option>
+     <option value="SC" class="text">SC</option>  
+     <option value="ST" class="text">ST</option>  
+     <option value="PD" class="text">PD</option>  
+     <option value="OBC" class="text">OBC</option>  
+     <option value="PWD" class="text">PWD</option>  
+    </select>
+   </div>
+   <div id="submit" class="arrange">
+     <input type="button" value="Submit" />
+   </div>
+   <div id="reset" class="arrange">
+     <input type="button" value="Reset" />
+   </div>
+ </div>
+</div>
+
+<div id="inner-head-1">
+<div id="result" class="round">
+<center><table id="result-2" class="text"></center>
+</table>
+</div>
+  
+<div id="result-1" class="round">
+  <br>
+  <center><b>Query</b></center>
+  <table class="text" align="center" cellspacing="5" id="result-3">
+    <tr>
+     <td class="text" >Search:</td><td class="text"></td>
+    </tr>
+    <tr>
+     <td class="text" >City:</td><td class="text"></td>
+    </tr>
+    <tr>
+     <td class="text">Category:</td><td class="text"></td>
+    </tr>
+    <tr>
+     <td class="text">Results:</td><td class="text"></td>
+    </tr> 
+  </table> 
+
+<center><div class="fb-like" data-href="http://www.facebook.com/resultsbyname" data-send="false" data-width="150" data-show-faces="false" data-font="lucida grande"></div></center>
+</div>   
+</div>

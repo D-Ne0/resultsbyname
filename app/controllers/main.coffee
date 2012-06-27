@@ -22,7 +22,7 @@ class Main extends Spine.Stack
       @jee2012s.active()
       Main.trackPage('#/jee2012')
 
-    '#/aieee2012': ()->
+    '/aieee2012': ()->
       @aieee2012s.active()
       Main.trackPage('#/aieee2012')
 

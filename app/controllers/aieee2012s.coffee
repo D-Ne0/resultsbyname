@@ -37,7 +37,7 @@ class Aieee2012s extends Spine.Controller
 
     @log('aieee2012 Instantiated!!!')
 
-    #@html require('views/aieee2012')()
+    @html require('views/aieee2012')()
     #Spine.Model.host = "http://localhost:3000"
     Spine.Model.host = "http://backens.herokuapp.com"
     Spine.Ajax.disable -> Aieee2012RCode.fetch()

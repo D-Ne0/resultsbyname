@@ -52,6 +52,8 @@
     </tr> 
   </table> 
 
-<center><div class="fb-like" data-href="http://www.facebook.com/resultsbyname" data-send="false" data-width="150" data-show-faces="false" data-font="lucida grande"></div></center>
-</div>   
+<br> 
+<div style="margin-left:10px;margin-bottom:5px"class="fb-like" data-href="http://www.facebook.com/resultsbyname" data-send="false" data-width="150" data-show-faces="false" data-font="lucida grande"></div>
+<br>
+<div style="margin-left:10px;margin-bottom:5px"><g:plusone size="medium"></g:plusone></div> 
 </div>

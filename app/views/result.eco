@@ -10,6 +10,8 @@
 </div>
   
 <div id="result-1" class="round">
+  <br>
+  <center><b>Query</b></center>
   <table class="text" align="center" cellspacing="5" id="result-3">
     <tr>
      <td class="text" >Search:</td><td class="text"></td>
@@ -23,6 +25,11 @@
     <tr>
      <td class="text">Results:</td><td class="text"></td>
     </tr> 
-   </table>    
+   </table>   
+<br> 
 <div style="margin-left:10px;margin-bottom:5px"class="fb-like" data-href="http://www.facebook.com/resultsbyname" data-send="false" data-width="150" data-show-faces="false" data-font="lucida grande"></div>
+<br>
+<div style="margin-left:10px;margin-bottom:5px"><g:plusone size="medium"></g:plusone></div>
 </div>
+
+

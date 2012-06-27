@@ -13,8 +13,6 @@ class Sidebar extends Spine.Controller
     super
     @html require('views/sidebar')()
     @bind('change',@change)
-    #@active (params) ->
-      #@log(params)
     
   click: (e) ->
     item = $(e.target)
@@ -26,6 +24,6 @@ class Sidebar extends Spine.Controller
     @el.children().removeClass('active')
     @current.parent().addClass('active')
     @db = @current.parent().attr('id')
-    @navigate '',@db
+    @navigate '#',@db
 
 module.exports = Sidebar

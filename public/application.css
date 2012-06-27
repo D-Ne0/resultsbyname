@@ -86,6 +86,9 @@ a {
   background: linear-gradient(top, #ddd 100%, #fff 70%) repeat scroll 0 0 transparent;
   border: 1px solid #ddd;
 }
+.aieee2012 {
+  width: 920px;
+}
 .jee2012 #inner-head,
 .aieee2012 #inner-head {
   height: 80px;
@@ -180,6 +183,9 @@ select {
   float: left;
   margin-left: 40px;
 }
+.aieee2012 div#result {
+  width: 595px;
+}
 .jee2012 div#result-1,
 .aieee2012 div#result-1 {
   position: absolute;
@@ -197,6 +203,9 @@ select {
   margin: 1em auto;
   border-collapse: collapse;
   table-layout: fixed;
+}
+.aieee2012 table#result-2 {
+  width: 580px;
 }
 .jee2012 table#result-2 td,
 .aieee2012 table#result-2 td {

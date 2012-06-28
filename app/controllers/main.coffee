@@ -18,7 +18,15 @@ class Main extends Spine.Stack
       @home.active()
       Main.trackPage('#/home')
 
+    '/home':()->
+      @home.active()
+      Main.trackPage('#/home')
+
     '#/jee2012': ()->
+      @jee2012s.active()
+      Main.trackPage('#/jee2012')
+
+    '/jee2012':()->
       @jee2012s.active()
       Main.trackPage('#/jee2012')
 
@@ -26,6 +34,10 @@ class Main extends Spine.Stack
       @aieee2012s.active()
       Main.trackPage('#/aieee2012')
 
+    '/aieee2012':()->
+      @aieee2012s.active()
+      Main.trackPage('#/aieee2012')
+  
   default: 'home'
 
   @trackPage:(url)->

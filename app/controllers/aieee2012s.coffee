@@ -49,12 +49,12 @@ class Aieee2012s extends Spine.Controller
 
   renderResult: (results) ->
     @result.html require('views/aieee2012_table_header')()
-    @q.count = if results? then results.length else 0
+    @q.count = results.length if results?
     if @q.city isnt "Any"
       @q.cityName = Aieee2012RCode.filter(@q?.city)[0]?.N
     else
       @q.cityName = "Any"
-      results[i].city = Aieee2012RCode.filter(parseInt(results[i].R/100000))[0]?.N for result,i in results
+      results[i].city = Aieee2012RCode.filter(parseInt(results[i].R/100000))[0]?.N for result,i in results?
     @result.append require('views/aieee2012_result')(results)
     @query.html require('views/aieee2012_query')(@q)
 

@@ -2,7 +2,7 @@
 <% @P2 = if @P2 is "Not Applicable/Not Applied" or @P2 is "ABS" then "NA" else @P2 %>
 <tr>
  <td><%== @R %></td>
- <td><%== @N %></td>
+ <td><%== @N %><br><br><b><%== (@city) %></b></td>
  <% if @P1 isnt "NA": %>     
  <td>AIR:<%== @AI1 %><br>AIR:<%== @AIC1 %> (<%== @C %>)<br><hr>SR:<%== @SA1 %><br>SR:<%== @SC1 %> (<%== @C %>)</td>
  <% else: %>

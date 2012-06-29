@@ -54,7 +54,7 @@ class Aieee2012s extends Spine.Controller
       @q.cityName = Aieee2012RCode.filter(@q?.city)[0]?.N
     else
       @q.cityName = "Any"
-      results[i].city = Aieee2012RCode.filter(parseInt(results[i].R/100000))[0]?.N for result,i in results?
+      results[i].city = Aieee2012RCode.filter(parseInt(results[i].R/100000))[0]?.N for result,i in results if results?
     @result.append require('views/aieee2012_result')(results)
     @query.html require('views/aieee2012_query')(@q)
 

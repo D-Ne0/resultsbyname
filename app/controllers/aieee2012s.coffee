@@ -1,4 +1,5 @@
 Spine = require('spine')
+Main = require('controllers/main')
 RollNo = require('models/aieee2012_rollno')
 Aieee2012 = require('models/aieee2012')
 Aieee2012RCode = require('models/aieee2012_region_code')
@@ -29,6 +30,7 @@ class Aieee2012s extends Spine.Controller
     @routes
       '/aieee2012/name::search/region::city/rank_type::type/page::page':(params) ->
         if params.search.length>=4
+          _gaq.push [ "_trackPageview","/#/aieee2012/search" ]
           @load = new Load({el:@result,template:require('views/loading')})
           @load.render()
           @load = new Load({el:@query,template:require('views/loading')})

@@ -1,4 +1,3 @@
-  <center><b>Query</b></center>
   <table class="text" align="center" cellspacing="5" id="result-3">
     <tr>
      <td class="text" >Search:</td><td class="text"><%== @search %></td>

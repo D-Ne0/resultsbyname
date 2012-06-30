@@ -28,7 +28,7 @@ class Aieee2012s extends Spine.Controller
     super
     @q={}
     @routes
-      '/aieee2012/name::search/region::city/rank_type::type/page::page':(params) ->
+      '!/aieee2012/name::search/region::city/rank_type::type/page::page':(params) ->
         if params.search.length>=4
           _gaq.push [ "_trackPageview","/#/aieee2012/search" ]
           @load = new Load({el:@result,template:require('views/loading')})
@@ -68,7 +68,7 @@ class Aieee2012s extends Spine.Controller
     @q.city = @city.val()
     @q.page = 1
     return alert 'Please enter atleast 4 characters' if @q.search.length<4
-    @navigate '','aieee2012','name:'+@q.search,'region:'+@q.city,'rank_type:'+@q.catg,'page:'+@q.page
+    @navigate '!','aieee2012','name:'+@q.search,'region:'+@q.city,'rank_type:'+@q.catg,'page:'+@q.page
 
   getResult_1:() ->
     @q.city = @city.val()
@@ -76,11 +76,11 @@ class Aieee2012s extends Spine.Controller
     @q.search = @search.val()
     @q.page = 1
     return alert 'Please enter atleast 4 characters' if @q.search.length<4
-    @navigate '','aieee2012','name:'+@q.search,'region:'+@q.city,'rank_type:'+@q.catg,'page:'+@q.page
+    @navigate '!','aieee2012','name:'+@q.search,'region:'+@q.city,'rank_type:'+@q.catg,'page:'+@q.page
 
   next_prev:(e) ->
     @q.page = e.target.id
-    @navigate '','aieee2012','name:'+@q.search,'region:'+@q.city,'rank_type:'+@q.catg,'page:'+@q.page
+    @navigate '!','aieee2012','name:'+@q.search,'region:'+@q.city,'rank_type:'+@q.catg,'page:'+@q.page
 
   click:()->
     @search.val('') if @search.val() is "Candidate's Name"

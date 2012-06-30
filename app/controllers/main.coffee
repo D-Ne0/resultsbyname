@@ -14,27 +14,27 @@ class Main extends Spine.Stack
 
   routes:
     
-    '#/home':()->
+    '#!/home':()->
       @home.active()
       Main.trackPage('#/home')
 
-    '/home':()->
+    '!/home':()->
       @home.active()
       Main.trackPage('#/home')
 
-    '#/jee2012': ()->
+    '#!/jee2012': ()->
       @jee2012s.active()
       Main.trackPage('#/jee2012')
 
-    '/jee2012':()->
+    '!/jee2012':()->
       @jee2012s.active()
       Main.trackPage('#/jee2012')
 
-    '/aieee2012': ()->
+    '#!/aieee2012': ()->
       @aieee2012s.active()
       Main.trackPage('#/aieee2012')
 
-    '/aieee2012':()->
+    '!/aieee2012':()->
       @aieee2012s.active()
       Main.trackPage('#/aieee2012')
   

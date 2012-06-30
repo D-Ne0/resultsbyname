@@ -3,6 +3,7 @@
 <tr>
  <td><%== @R %></td>
  <td><%== @N %><br><br><b><%== (@city) %></b></td>
+ <td><%== @FN %></td>
  <% if @P1 isnt "NA": %>     
  <td>AIR:<%== @AI1 %><br>AIR:<%== @AIC1 %> (<%== @C %>)<br><hr>SR:<%== @SA1 %><br>SR:<%== @SC1 %> (<%== @C %>)</td>
  <% else: %>
@@ -13,6 +14,6 @@
  <% else: %>
  <td>NA</td>
  <% end %>
- <td>B.E: <%== @P1 %><br><br>B.Arch: <%== @P2 %></td>
+ <td><b>B.E:</b> <%== @P1 %><br><b>B.Arch:</b> <%== @P2 %></td>
 </tr>
 

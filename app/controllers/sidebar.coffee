@@ -24,6 +24,6 @@ class Sidebar extends Spine.Controller
     @el.children().removeClass('active')
     @current.parent().addClass('active')
     @db = @current.parent().attr('id')
-    @navigate '#',@db
+    @navigate '#!',@db
 
 module.exports = Sidebar

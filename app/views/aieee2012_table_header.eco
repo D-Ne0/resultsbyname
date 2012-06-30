@@ -1,8 +1,9 @@
     <tr>
-     <th>Roll No.</th>
-     <th>Name<br><b>(city)</b</th>
-     <th>Rank (B.E)</th>
-     <th>Rank (B.Arch)</th>
-     <th>Marks</th>
+     <th width="10%">Roll No.</th>
+     <th width="20%">Name <b>(city)</b</th>
+     <th>Father Name</th>
+     <th width="19%">Rank (B.E)</th>
+     <th width="19%">Rank (B.Arch)</th>
+     <th width="16%">Marks</th>
     </tr>
 

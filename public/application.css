@@ -87,7 +87,8 @@ a {
   border: 1px solid #ddd;
 }
 .aieee2012 {
-  width: 940px;
+  width: 1010px;
+  margin-left: 30px;
 }
 .jee2012 #inner-head,
 .aieee2012 #inner-head {
@@ -184,7 +185,7 @@ select {
   margin-left: 40px;
 }
 .aieee2012 div#result {
-  width: 625px;
+  width: 705px;
 }
 .jee2012 div#result-1,
 .aieee2012 div#result-1 {
@@ -202,10 +203,10 @@ select {
   border: 1px solid #e5eff8;
   margin: 1em auto;
   border-collapse: collapse;
-  table-layout: fixed;
+/*table-layout:fixed;*/
 }
 .aieee2012 table#result-2 {
-  width: 610px;
+  width: 680px;
 }
 .jee2012 table#result-2 td,
 .aieee2012 table#result-2 td {

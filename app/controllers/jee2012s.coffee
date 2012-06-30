@@ -21,7 +21,7 @@ class Jee2012s extends Spine.Controller
     super
 
     @routes
-      '/jee2012/name::search/region::city/rank_type::type':(params) -> 
+      '!/jee2012/name::search/region::city/rank_type::type':(params) -> 
         if params.search.length>=4
           _gaq.push [ "_trackPageview","/#/jee2012/search" ]
           @load = new Load({el:@result,template:require('views/loading')})
